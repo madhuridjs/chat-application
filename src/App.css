@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.App{
+  background-color: #ecf0f1;
+  width:500px;
+  height: 133vh;
+  
+}
+.main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*
+**Nav
+*/
+.navbar{
+  cursor: pointer;
+  margin-top: 15px;
+  text-decoration: none;
+}
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  list-style: none;
+  margin-top: 70px;
+}
+.chatcategory{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat_contact{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat_message{
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+}
+
+/*
+**Search
+*/
+.searchbox{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+input{
+  padding: 10px;
+  width: 450px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 50px;
+  left: 397px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*
+**Chat
+*/
+.image_icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.chat{
+  width: 460px;
 }
