@@ -1,7 +1,7 @@
 const data = [
     {
       id: 1,
-      title: ' chat1',
+      title: ' Rosy',
       category: 'Pinned Chats',
       lastmsgtime: 60,
       img: '/contactimages/contact1.jpg',
@@ -9,7 +9,7 @@ const data = [
     },
     {
       id: 2,
-      title: 'chat2',
+      title: 'Jasmine',
       category: 'Group Chats',
       lastmsgtime: 30,
       img: '/contactimages/contact2.jpg',
@@ -17,7 +17,7 @@ const data = [
     },
     {
       id: 3,
-      title: 'chat3',
+      title: 'sarah',
       category: 'DMs',
       lastmsgtime: 100,
       img: '/contactimages/contact3.jpg',
@@ -25,7 +25,7 @@ const data = [
     },
     {
       id: 4,
-      title: 'chat4',
+      title: 'Raj',
       category: 'Contacts',
       lastmsgtime: 3,
       img: '/contactimages/contact4.jpg',
@@ -33,7 +33,7 @@ const data = [
     },
     {
       id: 5,
-      title: 'chat5',
+      title: 'Reva',
       category: 'Pinned Chats',
       lastmsgtime: 3,
       img: '/contactimages/contact5.jpg',
@@ -41,7 +41,7 @@ const data = [
     },
     {
       id: 6,
-      title: 'chat6',
+      title: 'smily',
       category: 'Group Chats',
       lastmsgtime: 10,
       img: '/contactimages/contact6.jpg',
@@ -49,10 +49,10 @@ const data = [
     },
     {
       id: 7,
-      title: 'chat7',
+      title: 'lily',
       category: 'DMs',
       lastmsgtime: 140,
-      img: '/contactimages/contact6.jpg',
+      img: '/contactimages/lily.ico',
       msg:'ntg',
     },
     ];

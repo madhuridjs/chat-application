@@ -7,7 +7,17 @@ const Chat = ({chatTypes}) => {
     const handleSearch = (event) => {
         setSearch(event.target.value);
     }
-    
+    useEffect(() => {
+        const sorted = chatTypes.sort((a, b) => {
+            return a.lastmsgtime - b.lastmsgtime;
+        })
+        console.log(sorted);
+    },[]) 
+
+    setTimeout(function(){
+        window.location.reload();
+    },30000);
+
     return (
         <div>
             <input 
@@ -26,14 +36,17 @@ const Chat = ({chatTypes}) => {
                 }).map((chatType) => {
                     const {id, title, msg, img, lastmsgtime} = chatType;
                     return(
+                        
                         <div className="chat_contact">
                             <div key= {id} >
                                 <img className= 'image_icon' src= {img} />
                             </div>
                             <div className='chat_message'>  
                                 <h3 className= 'chat_title'>{title}</h3>
-                                <p>{msg}</p>
-                                <p>{`${lastmsgtime} mins`}</p>  
+                                <p>{msg}</p>  
+                            </div>
+                            <div className= 'chat_msg'>
+                                <p className= 'chat_msgtime'>{`${lastmsgtime} mins`}</p>
                             </div>
                         </div>   
                     )

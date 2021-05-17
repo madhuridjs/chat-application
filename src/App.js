@@ -1,7 +1,8 @@
-import React, {useState} from 'react'; 
+import React, {useState, useRef} from 'react'; 
 import './App.css';
 import Contacts from './chat pages/contacts';
 import DMs from './chat pages/DMs';
+import Menu from './chat pages/menu';
 import GroupChats from './chat pages/groupchats';
 import Pinnedchats from './chat pages/pinnedchats';
 import Nav from './chat pages/Nav';
@@ -11,6 +12,7 @@ import data from './data';
 
 const allCategories= [...new Set(data.map((datatype) => datatype.category))];
 console.log(allCategories);
+
 function App() {
   const [chatTypes, setChatTypes]= useState(data);
   const [chatCategory, setChatCategory]= useState(allCategories);
@@ -23,10 +25,13 @@ function App() {
     setChatTypes(newItems);
     console.log(filterItems);
   }
-    
+  const outerRef = useRef(null);
   return (
     <div className="main">
       <div className="App">
+      <div ref={outerRef}>
+      <Menu outerRef={outerRef} />
+    </div>
       <BrowserRouter>
       <Nav chatCategory={chatCategory} filterItems={filterItems}/>
       <Chat chatTypes= {chatTypes} />

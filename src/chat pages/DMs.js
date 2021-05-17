@@ -1,5 +1,5 @@
-import React from 'react';
-import Chat from './chat';
+import React from 'react'
+import Chat from './chat'
 
 const DMs = () => {
     return (

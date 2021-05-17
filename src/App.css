@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
   margin: 0px;
   padding: 0px;
@@ -23,7 +24,7 @@
   margin-top: 15px;
   text-decoration: none;
 }
-ul{
+.nav_chat{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -32,9 +33,20 @@ ul{
   margin-top: 70px;
 }
 .chatcategory{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #636e72;
+}
+.chatcategory:hover{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #000;
+  border-bottom: 3px solid black;
+  border-radius: 3px;
+}
+.link{
   text-decoration: none;
 }
-
 .chat_contact{
   display: flex;
   align-items: center;
@@ -46,7 +58,24 @@ ul{
   flex-direction: column;
   margin-left: 10px;
 }
-
+.chat_msgtime{
+  position: absolute;
+  right: 400px;
+  background-color: #4cd137;
+  border-radius: 10px;
+  width: max-content;
+  padding: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+.chat_msg{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
+  
+}
 /*
 **Search
 */
@@ -80,4 +109,29 @@ input{
 }
 .chat{
   width: 460px;
+}
+
+
+.menu {
+  background-color: #fff;
+  border-radius: 2px;
+  padding-left: 0;
+  margin: 0;
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  padding: 0.2em 1em;
+  color: #000;
+  cursor: pointer;
+  top: 50%;
+}
+
+.menu li:hover {
+  background-color: #f2f2f2;
+  top: 50%;
 }

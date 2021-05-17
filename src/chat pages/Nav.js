@@ -6,14 +6,17 @@ const Nav = ( {filterItems, chatCategory} ) => {
 
     return (
         <nav className= 'navbar'>
-            <ul>
+            <ul className= 'nav_chat'>
                 {chatCategory.map((category,id) => {
                     return(
-                        <Link to= {`/${category}`} onClick={() => filterItems(category)}>
-                            <li className= "chatcategory" key={id}>
+                        <div>
+                        <Link to= {`/${category}`} onClick={() => filterItems(category)} className='link'>
+                            <li className= 'chatcategory' key={id}>
                             {category}
                             </li>
                         </Link>
+                        </div>
+                        
                     )
                 })}
             </ul>
