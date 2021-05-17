@@ -47,6 +47,9 @@
 .link{
   text-decoration: none;
 }
+.active_chatcategory{
+  color: #000;
+}
 .chat_contact{
   display: flex;
   align-items: center;

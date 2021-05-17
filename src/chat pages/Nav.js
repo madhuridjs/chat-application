@@ -10,7 +10,8 @@ const Nav = ( {filterItems, chatCategory} ) => {
                 {chatCategory.map((category,id) => {
                     return(
                         <div>
-                        <Link to= {`/${category}`} onClick={() => filterItems(category)} className='link'>
+                        <Link to= {`/${category}`} onClick={() => filterItems(category)} className='link'
+                        >
                             <li className= 'chatcategory' key={id}>
                             {category}
                             </li>
